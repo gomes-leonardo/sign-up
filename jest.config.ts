@@ -6,8 +6,10 @@ const config: Config = {
   coverageProvider: 'v8',
   testEnvironment: 'node',
   transform: {
-    '.+\\ts$': 'ts-jest'
-  }
+    '^.+\\.ts$': 'ts-jest'
+  },
+  moduleFileExtensions: ['ts', 'js', 'json', 'node'],
+  transformIgnorePatterns: ['/node_modules/']
 }
 
 export default config

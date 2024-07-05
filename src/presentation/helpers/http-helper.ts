@@ -6,10 +6,7 @@ export const badRequest = (error: Error): HttpResponse => {
     body: error
   }
 }
-
 export const successResponse = (message: string): HttpResponse => ({
-
   statusCode: 400,
   body: message
-
 })

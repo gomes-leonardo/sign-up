@@ -10,7 +10,12 @@ const config: Config = {
     '^.+\\.ts$': 'ts-jest'
   },
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
-  transformIgnorePatterns: ['/node_modules/']
+  transformIgnorePatterns: ['/node_modules/'],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/presentation/protocols',
+    '<rootDir>/src/presentation/controllers/signup/signup-protocols.ts',
+    '<rootDir>/src/domain/'
+  ]
 }
 
 export default config

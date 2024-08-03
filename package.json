@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+ "scripts": {
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose":"jest --passWithNoTests --watch --runInBand",
-    "test:unit": "npm test -- --watch",
-    "test:staged": "jest -- --passWithNoTests",
+    "test:unit": "npm test -- --watch -c jest-unit-config.ts",
+    "test:integration": "npm test -- --watch -c jest-integration-config.ts",
+    "test:staged": "jest -- --findRelatedTests",
     "test:ci": "npm test -- --coverage"
   },
   "keywords": [],

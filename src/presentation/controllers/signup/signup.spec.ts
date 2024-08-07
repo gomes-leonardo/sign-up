@@ -1,3 +1,4 @@
+import { Encrypter } from '../../../data/protocols/encrypter'
 import { InvalidParamError, MissingParamError, ServerError } from '../../errors'
 import { SignUpController } from './signup'
 import { type EmailValidator, type AddAccount, type AccountModel, type AddAccountModel } from './signup-protocols'
@@ -7,6 +8,7 @@ interface SutTypes {
   emailValidatorStub: EmailValidator
   addAccountStub: AddAccount
 }
+
 const makeEmailValidator = (): EmailValidator => {
   class EmailValidatorStub implements EmailValidator {
     isValid (email: string): boolean {

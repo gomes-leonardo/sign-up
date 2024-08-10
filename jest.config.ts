@@ -13,6 +13,7 @@ const config: Config = {
   transformIgnorePatterns: ['/node_modules/'],
   coveragePathIgnorePatterns: [
     '<rootDir>/src/presentation/protocols',
+    '<rootDir>/src/data/protocols',
     '<rootDir>/src/presentation/controllers/signup/signup-protocols.ts',
     '<rootDir>/src/domain/'
   ]

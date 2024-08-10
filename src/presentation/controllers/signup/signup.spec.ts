@@ -1,4 +1,3 @@
-import { Encrypter } from '../../../data/protocols/encrypter'
 import { InvalidParamError, MissingParamError, ServerError } from '../../errors'
 import { SignUpController } from './signup'
 import { type EmailValidator, type AddAccount, type AccountModel, type AddAccountModel } from './signup-protocols'

@@ -11,7 +11,6 @@ export class AccountMongoRepository implements AddAccountRepository {
       id: result.insertedId.toString(),
       ...accountData
     }
-    console.log(account)
     return account
   }
 }
